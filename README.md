@@ -1,2 +1,2 @@
 # Word-Guess-Game
-Word guess game
+This is a Word guess game. It's 3015 and your personal identity database has been hacked! You will need to guess the password in order to re-gain entry to your database. Type in a letter to see if it is included in the password - but be careful. You only get so many guesses before you're locked out of your database and the hackers erase everything! If your database is erased, you lose your identity!
