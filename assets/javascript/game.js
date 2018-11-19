@@ -70,6 +70,8 @@ function updateDisplay() {
     }
     document.getElementById("remainingGuesses").innerText = remainingGuesses;
     document.getElementById("guessedLetters").innerText = guessedLetters;
+
+// Determines if user is out of guesses and displays appropriate message
     if(remainingGuesses <= 0) {
         document.getElementById("gameover").style.cssText = "display: block";
         document.getElementById("pressKeyTryAgain").style.cssText = "display:block";
@@ -88,10 +90,7 @@ document.onkeydown = function(event) {
         resetGame();
         hasFinished = false;
     } else {
-        // Check to make sure a-z was pressed.
-        if(event.keyCode >= 65 && event.keyCode <= 90) {
-            makeGuess(event.key.toLowerCase());
-        }
+        makeGuess(event.key.toLowerCase());
     }
 };
 
